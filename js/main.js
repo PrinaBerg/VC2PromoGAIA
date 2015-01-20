@@ -55,7 +55,7 @@ $(document).ready(function(){
     $container.content.css({'height':'500px'});
     $container.footer.css({'position' : 'relative', 'marginTop' : '50px'});
     $form_selector.form_register.slideDown(800);
-    $buttons.button_register.fadeIn(1000);
+    $buttons.button_register.fadeIn(100);
 
 
   });
@@ -71,7 +71,7 @@ $(document).ready(function(){
     $selectors.list_three.fadeOut(10);
     $container.content.css({'height':'500px'});
     $container.footer.css({'position' : 'relative', 'marginTop' : '50px'});
-    $buttons.button_register.fadeIn(1000);
+    $buttons.button_register.fadeIn(100);
 
 
   });
@@ -85,7 +85,7 @@ $(document).ready(function(){
     $selectors.list_two.fadeOut(10);
     $container.content.css({'height':'500px'});
     $container.footer.css({'position' : 'relative', 'marginTop' : '50px'});
-    $buttons.button_register.fadeIn(1000);
+    $buttons.button_register.fadeIn(100);
 
 
   });
@@ -99,11 +99,11 @@ $(document).ready(function(){
 //clear button
 $buttons.button_register.on('click', function(){
 
-    $selectors.list_one.fadeIn(2500);
-    $selectors.list_two.fadeIn(2500);
-    $selectors.list_three.fadeIn(1500);
+    $selectors.list_one.fadeIn(100);
+    $selectors.list_two.fadeIn(100);
+    $selectors.list_three.fadeIn(100);
     $form_selector.form_register.fadeOut(80);
-    $buttons.button_register.fadeOut(1000);
+    $buttons.button_register.fadeOut(100);
 
 
   });

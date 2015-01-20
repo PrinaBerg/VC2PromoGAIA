@@ -59,11 +59,11 @@ $general->logged_in_protect();
              <form name="form_register">
                <fieldset>
                  <legend>Informe seus dados</legend>
-                 <label> Name:</label> <input type="text" name=""><br>
-                 <label>Sobrenome:</label> <input type="text" name=""><br>
-                 <label>Email:</label> <input type="email" name=""><br>
-                 <label>Supervisão:</label> <input type="text" name=""><br>
-                 <label>Problema:</label> <textarea name="">Detalhe aqui o problema... </textarea><br><br>
+                 <label>Name:</label> <input type="text" name="name"><br>
+                 <label>Sobrenome:</label> <input type="text" name="last_name"><br>
+                 <label>Email:</label> <input type="email" name="email"><br>
+                 <label>Supervisão:</label> <input type="text" name="partner"><br>
+                 <label>Problema:</label> <textarea name="problem">Detalhe aqui... </textarea><br><br>
                  <input type="submit">
                </fieldset>
              </form>
