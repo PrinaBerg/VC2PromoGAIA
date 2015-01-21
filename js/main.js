@@ -60,9 +60,13 @@ $(document).ready(function(){
 
   });
 
+}else{
 
+  alert('An error was found.');
 
-} if(typeof $selectors.list_two !== 'undefined' ){
+};
+
+if(typeof $selectors.list_two !== 'undefined' ){
 
   //button two
   $selectors.list_two.on('click', function(){
@@ -77,7 +81,14 @@ $(document).ready(function(){
   });
 
 
-} if(typeof $selectors.list_three !== 'undefined'){
+}else{
+
+  alert('An error was found.');
+
+};
+
+
+if(typeof $selectors.list_three !== 'undefined'){
   //button three
   $selectors.list_three.on('click', function(){
 
