@@ -5,7 +5,7 @@ $(document).ready(function(){
   //container article -> '#help'
 
 
-  $container = []
+  $container = [];
 
   $container = {
 
@@ -20,9 +20,9 @@ $(document).ready(function(){
 
   $selectors = {
 
-    list_one:$('#help').find('ul').children('.register'),
-    list_two:$('#help').find('ul').children('.log'),
-    list_three:$('#help').find('ul').children('.doubt')
+    list_one: $('#help').find('ul').children('.register'),
+    list_two: $('#help').find('ul').children('.log'),
+    list_three: $('#help').find('ul').children('.doubt')
 
   }; //selectors end
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
 
   $form_selector = {
 
-    form_register: $('#help').find('#form_register').children('form[name="form_register"]'),
+    form_register: $('#help').find('#form_register').children('form[name="form_register"]')
 
   };//form-selectors end
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
   $buttons = {
 
-    button_register:$('#help').find('#form_register').children('.backButton')
+    button_register: $('#help').find('#form_register').children('.backButton')
 
    };
 
