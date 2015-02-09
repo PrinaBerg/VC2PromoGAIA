@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 
   if(empty($_POST['name']) || empty($_POST['last_name']) || empty($_POST['email']) || empty($_POST['partner']) || empty($_POST['problem'])){
 
-   $errors[] =  'Todos os campos são requeridos';
+   $errors[] =  'Todos os campos são requeridos!';
 
  }else{
 
@@ -75,19 +75,8 @@ if(isset($_POST['submit'])){
         <nav>
         <header id="welcome-wrap">
           <hgroup class="welcome">
-          <?php
-           if(empty($errors) === false){
-           echo '<h4>' . implode('</h4><h4>', $errors) . '</h4>';
-           }
-          ?>
-          <?php
-            if(isset($_GET['success']) && empty($_GET['success'])){
-             echo '<h4>Suas atualizações foram realizadas!</h4>';
-
-            }
-           ?>
              <h1>VC2 Promo Report Manager</h1>
-             <h3>Dúvidas</h3>
+             <h3>Dúvidas</h3><br/>
            </hgroup>
          </header>
          <br />
@@ -98,6 +87,17 @@ if(isset($_POST['submit'])){
              <li class="doubt"><a href="#">Outra dúvida</a></li>
            </ul>
            <section id="form_register">
+             <?php
+               if(isset($_GET['success']) && empty($_GET['success'])){
+                echo '<h2 id="approved">Suas atualizações foram realizadas!</h2>';
+
+               }
+              ?>
+             <?php
+              if(empty($errors) === false){
+              echo '<h2 id="errors">' . implode('</h2><h2>', $errors) . '</h2>';
+              }
+             ?>
              <form name="form_register" method="post">
                <fieldset>
                  <legend>Informe seus dados</legend>

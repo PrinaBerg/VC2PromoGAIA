@@ -955,6 +955,93 @@ form[name="form_register"]{
 
 }
 
+/* ==========================================================================
+   Animation
+   ========================================================================== */
+
+@-webkit-keyframes errors{
+
+    0%{color: red;}
+    25%  {color: orange;}
+    50%  {color: yellow;}
+    100% {color: red;}
+}
+@-ms-keyframes errors{
+
+    0%{color: red;}
+    25%  {color: orange;}
+    50%  {color: yellow;}
+    100% {color: red;}
+}
+@-moz-keyframes errors{
+
+    0%{color: red;}
+    25%  {color: orange;}
+    50%  {color: yellow;}
+    100% {color: red;}
+}
+@keyframes errors{
+
+    0%{color: red;}
+    25%  {color: orange;}
+    50%  {color: yellow;}
+    100% {color: red;}
+}
+
+#errors{
+
+  -webkit-animation:errors 1s ease-out 2s infinite alternate;
+  -ms-animation:errors 1s ease-out 2s infinite alternate;
+  -moz-animation:errors 1s ease-out 2s infinite alternate;
+  animation:errors 1s ease-out 2s infinite alternate;
+  text-shadow: 1px 1px black;
+  color:red;
+
+}
+
+
+@-webkit-keyframes approved{
+
+    0%{color: green;}
+    25%  {color: blue;}
+    50%  {color: lightgreen;}
+    100% {color: green;}
+}
+@-ms-keyframes approved{
+
+    0%{color: green;}
+    25%  {color: blue;}
+    50%  {color: lightgreen;}
+    100% {color: green;}
+}
+@-moz-keyframes approved{
+
+    0%{color: green;}
+    25%  {color: blue;}
+    50%  {color: lightgreen;}
+    100% {color: green;}
+
+}
+@keyframes approved{
+
+    0%{color: green;}
+    25%  {color: blue;}
+    50%  {color: lightgreen;}
+    100% {color: green;}
+
+}
+#approved{
+
+  -webkit-animation:approved 1s ease-out 2s infinite alternate;
+  -ms-animation:approved 1s ease-out 2s infinite alternate;
+  -moz-animation:approved 1s ease-out 2s infinite alternate;
+  animation:approved 1s ease-out 2s infinite alternate;
+  text-shadow: 1px 1px black;
+  color:green;
+
+}
+
+
 
 /* ==========================================================================
    Helper classes
