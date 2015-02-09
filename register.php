@@ -83,7 +83,7 @@ if (isset($_POST['submit'])) {
 		<hgroup class="welcome">
 		<?php
 			if (isset($_GET['success']) && empty($_GET['success'])) {
-				echo 'Thank you for registering. Please check your email.';
+				echo 'Obrigado pelo cadastro. Verifique seu email.';
 			}
 		?>
 			<h1>VC2 Promo Report Manager</h1>

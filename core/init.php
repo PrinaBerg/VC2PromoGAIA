@@ -1,13 +1,15 @@
-<?php 
+<?php
 session_start();
 require 'connect/database.php';
 require 'classes/users.php';
+require 'classes/doubts.php';
 require 'classes/general.php';
 require 'classes/bcrypt.php';
 
 // error_reporting(0);
 
 $users 		= new Users($db);
+$doubts   = new Doubts($db);
 $general 	= new General();
 $bcrypt 	= new Bcrypt(12);
 

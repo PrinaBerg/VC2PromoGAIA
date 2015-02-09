@@ -1,8 +1,40 @@
 <?php
 require 'core/init.php';
 $general->logged_in_protect();
-?>
 
+
+if(isset($_POST['submit'])){
+
+  if(empty($_POST['name']) || empty($_POST['last_name']) || empty($_POST['email']) || empty($_POST['partner']) || empty($_POST['problem'])){
+
+   $errors[] =  'Todos os campos são requeridos';
+
+ }else{
+
+    if(!ctype_alnum($_POST['name'])){
+        $errors[] = 'Por favor digite um usuário apenas com letras e números.';
+    }
+    if(!ctype_alnum($_POST['last_name'])){
+        $errors[] = 'Por favor digite um usuário apenas com letras e números.';
+    }
+ }
+
+ if(empty($errors) === true){
+
+   $name 	= htmlentities($_POST['name']);
+   $last_name 	= htmlentities($_POST['last_name']);
+   $email 		= $_POST['email'];
+   $partner = htmlentities($_POST['partner']);
+   $problem = htmlentities($_POST['problem']);
+
+   $doubts->register($name, $last_name, $email, $partner, $problem);
+   header('Location: help.php?success');
+   exit();
+
+  }
+ }
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -43,6 +75,17 @@ $general->logged_in_protect();
         <nav>
         <header id="welcome-wrap">
           <hgroup class="welcome">
+          <?php
+           if(empty($errors) === false){
+           echo '<h4>' . implode('</h4><h4>', $errors) . '</h4>';
+           }
+          ?>
+          <?php
+            if(isset($_GET['success']) && empty($_GET['success'])){
+             echo '<h4>Suas atualizações foram realizadas!</h4>';
+
+            }
+           ?>
              <h1>VC2 Promo Report Manager</h1>
              <h3>Dúvidas</h3>
            </hgroup>
@@ -55,15 +98,17 @@ $general->logged_in_protect();
              <li class="doubt"><a href="#">Outra dúvida</a></li>
            </ul>
            <section id="form_register">
-             <form name="form_register">
+             <form name="form_register" method="post">
                <fieldset>
                  <legend>Informe seus dados</legend>
-                 <label>Name:</label> <input type="text" name="name"><br>
-                 <label>Sobrenome:</label> <input type="text" name="last_name"><br>
-                 <label>Email:</label> <input type="email" name="email"><br>
-                 <label>Supervisão:</label> <input type="text" name="partner"><br>
-                 <label>Problema:</label> <textarea name="problem">Detalhe aqui... </textarea><br><br>
-                 <input type="submit">
+
+                 <label>Name:</label> <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo htmlentities($_POST['name']); ?>"><br>
+                 <label>Sobrenome:</label> <input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])) echo htmlentities($_POST['last_name']); ?>"><br>
+                 <label>Email:</label> <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlentities($_POST['email']); ?>"><br>
+                 <label>Supervisão:</label> <input type="text" name="partner" value="<?php if(isset($_POST['partner'])) echo htmlentities($_POST['partner']); ?>"><br>
+                 <label>Problema:</label> <textarea name="problem" value="<?php if(isset($_POST['problem'])) echo htmlentities($_POST['problem']); ?>">Detalhe aqui... </textarea><br><br>
+                 <input type="submit" name="submit">
+
                </fieldset>
              </form>
              <input type="button" value="voltar" class="backButton">
