@@ -1058,7 +1058,7 @@ form[name="form_register"]{
    -ms-transition:500ms ease-out;
    transition:500ms ease-out;
    border-radius:100%;
-   border:2px solid red;
+   border:2px solid black;
    cursor:pointer;
 }
 
@@ -1069,15 +1069,89 @@ form[name="form_register"]{
   -moz-transition:500ms ease-out;
   -ms-transition:500ms ease-out;
   transition:500ms ease-out;
+  transform: scale(1.4);
+  border-radius:100%;
+  border:2px solid red;
+  cursor:pointer;
+
+}
+
+#doubts-login>ul{
+
+  padding:0;
+  margin:0;
+
+}
+
+#doubts-login>ul>li{
+
+  list-style-type:none;
+
+}
+
+#doubts-login>ul>li>a{
+
+  text-decoration:none;
+  color:black;
+
+}
+
+#contact-us{
+
+  display:none;
+  position: absolute;
+  top: 48%;
+  right: 50%;
+  margin-right: -240px;
+  padding: 10px;
+  width: 480px;
+  height: 240px;
+  margin-top: 70px;
+  background: rgb(235,235,235);
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  -ms-transition:500ms ease-out;
+  transition:500ms ease-out;
   border-radius:100%;
   border:2px solid black;
   cursor:pointer;
 
+}
+
+#contact-us:hover{
+
+  background: rgb(245,245,245);
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  -ms-transition:500ms ease-out;
+  transition:500ms ease-out;
+  transform: scale(1.4);
+  border-radius:100%;
+  border:2px solid red;
+  cursor:pointer;
 
 }
 
 
+#contact-us>ul{
 
+  padding:0;
+  margin:0;
+
+}
+
+#contact-us>ul>li{
+
+  list-style-type:none;
+
+}
+
+#contact-us>ul>li>a{
+
+  text-decoration:none;
+  color:black;
+  
+}
 
 /* ==========================================================================
    Helper classes

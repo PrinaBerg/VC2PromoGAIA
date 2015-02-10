@@ -33,7 +33,8 @@ $(document).ready(function(){
   $form_selector = {
 
     form_register: $('#help').find('#form_register').children('form[name="form_register"]'),
-    doubts_login: $('#help').find('#form_register').children('#doubts-login')
+    doubts_login: $('#help').find('#form_register').children('#doubts-login'),
+    contact_us: $('#help').find('#form_register').children('')
 
   };//form-selectors end
 
