@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
    header('Location: help.php?success');
    exit();
 
-  }
+    }
  }
 
 ?>
@@ -90,7 +90,6 @@ if(isset($_POST['submit'])){
              <?php
                if(isset($_GET['success']) && empty($_GET['success'])){
                 echo '<h2 id="approved">Suas atualizações foram realizadas!</h2>';
-
                }
               ?>
              <?php
@@ -101,14 +100,12 @@ if(isset($_POST['submit'])){
              <form name="form_register" method="post">
                <fieldset>
                  <legend>Informe seus dados</legend>
-
                  <label>Name:</label> <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo htmlentities($_POST['name']); ?>"><br>
                  <label>Sobrenome:</label> <input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])) echo htmlentities($_POST['last_name']); ?>"><br>
                  <label>Email:</label> <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlentities($_POST['email']); ?>"><br>
                  <label>Supervisão:</label> <input type="text" name="partner" value="<?php if(isset($_POST['partner'])) echo htmlentities($_POST['partner']); ?>"><br>
                  <label>Problema:</label> <textarea name="problem" value="<?php if(isset($_POST['problem'])) echo htmlentities($_POST['problem']); ?>">Detalhe aqui... </textarea><br><br>
                  <input type="submit" name="submit">
-
                </fieldset>
              </form>
              <input type="button" value="voltar" class="backButton">

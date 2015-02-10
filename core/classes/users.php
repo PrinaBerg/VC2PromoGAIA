@@ -1,12 +1,12 @@
-<?php 
+<?php
 class Users{
- 	
+
 	private $db;
 
 	public function __construct($database) {
 	    $this->db = $database;
-	}	
-	
+	}
+
 	public function update_user($first_name, $last_name, $gender, $bio, $image_location, $id){
 
 		$query = $this->db->prepare("UPDATE `users` SET
@@ -15,8 +15,8 @@ class Users{
 								`gender`		= ?,
 								`bio`			= ?,
 								`image_location`= ?
-								
-								WHERE `id` 		= ? 
+
+								WHERE `id` 		= ?
 								");
 
 		$query->bindValue(1, $first_name);
@@ -25,12 +25,12 @@ class Users{
 		$query->bindValue(4, $bio);
 		$query->bindValue(5, $image_location);
 		$query->bindValue(6, $id);
-		
+
 		try{
 			$query->execute();
 		}catch(PDOException $e){
 			die($e->getMessage());
-		}	
+		}
 	}
 
 	public function change_password($user_id, $password) {
@@ -43,7 +43,7 @@ class Users{
 		$query = $this->db->prepare("UPDATE `users` SET `password` = ? WHERE `id` = ?");
 
 		$query->bindValue(1, $password_hash);
-		$query->bindValue(2, $user_id);				
+		$query->bindValue(2, $user_id);
 
 		try{
 			$query->execute();
@@ -59,7 +59,7 @@ class Users{
 		if($generated_string == 0){
 			return false;
 		}else{
-	
+
 			$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `email` = ? AND `generated_string` = ?");
 
 			$query->bindValue(1, $email);
@@ -71,12 +71,12 @@ class Users{
 				$rows = $query->fetchColumn();
 
 				if($rows == 1){
-					
+
 					global $bcrypt;
 
 					$username = $this->fetch_info('username', 'email', $email); // getting username for the use in the email.
 					$user_id  = $this->fetch_info('id', 'email', $email);// We want to keep things standard and use the user's id for most of the operations. Therefore, we use id instead of email.
-			
+
 					$charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 					$generated_password = substr(str_shuffle($charset),0, 10);
 
@@ -85,7 +85,7 @@ class Users{
 					$query = $this->db->prepare("UPDATE `users` SET `generated_string` = 0 WHERE `id` = ?");
 
 					$query->bindValue(1, $user_id);
-	
+
 					$query->execute();
 
 					mail($email, 'Your password', "Hello " . $username . ",\n\nYour your new password is: " . $generated_password . "\n\nPlease change your password once you have logged in using this password.\n\n-Example team");
@@ -106,7 +106,7 @@ class Users{
 		if (!in_array($what, $allowed, true) || !in_array($field, $allowed, true)) {
 		    throw new InvalidArgumentException;
 		}else{
-		
+
 			$query = $this->db->prepare("SELECT $what FROM `users` WHERE $field = ?");
 
 			$query->bindValue(1, $value);
@@ -114,7 +114,7 @@ class Users{
 			try{
 
 				$query->execute();
-				
+
 			} catch(PDOException $e){
 
 				die($e->getMessage());
@@ -130,7 +130,7 @@ class Users{
 
 		$unique = uniqid('',true);
 		$random = substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ'),0, 10);
-		
+
 		$generated_string = $unique . $random; // a random and unique string
 
 		$query = $this->db->prepare("UPDATE `users` SET `generated_string` = ? WHERE `email` = ?");
@@ -139,21 +139,21 @@ class Users{
 		$query->bindValue(2, $email);
 
 		try{
-			
+
 			$query->execute();
 
-			mail($email, 'Recover Password', "Hello " . $username. ",\r\nPlease click the link below:\r\n\r\nhttp://www.example.com/recover.php?email=" . $email . "&generated_string=" . $generated_string . "\r\n\r\n We will generate a new password for you and send it back to your email.\r\n\r\n-- Example team");			
-			
+			mail($email, 'Recuperação de Senha.', "Olá " . $username. ",\r\nPor favor, clique no link abaixo:\r\n\r\nhttp://www.example.com/recover.php?email=" . $email . "&generated_string=" . $generated_string . "\r\n\r\n Nós criaremos uma nova senha e enviaremos no seu e-mail.\r\n\r\n-- VC2 Promo.");
+
 		} catch(PDOException $e){
 			die($e->getMessage());
 		}
 	}
 
 	public function user_exists($username) {
-	
+
 		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `username`= ?");
 		$query->bindValue(1, $username);
-	
+
 		try{
 
 			$query->execute();
@@ -170,12 +170,12 @@ class Users{
 		}
 
 	}
-	 
+
 	public function email_exists($email) {
 
 		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `email`= ?");
 		$query->bindValue(1, $email);
-	
+
 		try{
 
 			$query->execute();
@@ -200,7 +200,7 @@ class Users{
 		$time 		= time();
 		$ip 		= $_SERVER['REMOTE_ADDR']; // getting the users IP address
 		$email_code = $email_code = uniqid('code_',true); // Creating a unique string.
-		
+
 		$password   = $bcrypt->genHash($password);
 
 		$query 	= $this->db->prepare("INSERT INTO `users` (`username`, `password`, `email`, `ip`, `time`, `email_code`) VALUES (?, ?, ?, ?, ?, ?) ");
@@ -215,14 +215,14 @@ class Users{
 		try{
 			$query->execute();
 
-			mail($email, 'Please activate your account', "Hello " . $username. ",\r\nThank you for registering with us. Please visit the link below so we can activate your account:\r\n\r\nhttp://www.example.com/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- Example team");
+			mail($email, 'Por Favor, ative sua conta', "Olá " . $username. ",\r\nObrigado pelo cadastro. Por favor entre no link abaixo para ativar a sua conta:\r\n\r\nhttp://www.example.com/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- VC2 Promo.");
 		}catch(PDOException $e){
 			die($e->getMessage());
-		}	
+		}
 	}
 
 	public function activate($email, $email_code) {
-		
+
 		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `email` = ? AND `email_code` = ? AND `confirmed` = ?");
 
 		$query->bindValue(1, $email);
@@ -235,11 +235,11 @@ class Users{
 			$rows = $query->fetchColumn();
 
 			if($rows == 1){
-				
+
 				$query_2 = $this->db->prepare("UPDATE `users` SET `confirmed` = ? WHERE `email` = ?");
 
 				$query_2->bindValue(1, 1);
-				$query_2->bindValue(2, $email);				
+				$query_2->bindValue(2, $email);
 
 				$query_2->execute();
 				return true;
@@ -260,9 +260,9 @@ class Users{
 		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `users` WHERE `username`= ? AND `confirmed` = ?");
 		$query->bindValue(1, $username);
 		$query->bindValue(2, 1);
-		
+
 		try{
-			
+
 			$query->execute();
 			$rows = $query->fetchColumn();
 
@@ -286,22 +286,22 @@ class Users{
 		$query->bindValue(1, $username);
 
 		try{
-			
+
 			$query->execute();
 			$data 				= $query->fetch();
 			$stored_password 	= $data['password']; // stored hashed password
 			$id   				= $data['id']; // id of the user to be returned if the password is verified, below.
-			
+
 			if($bcrypt->verify($password, $stored_password) === true){ // using the verify method to compare the password with the stored hashed password.
 				return $id;	// returning the user's id.
 			}else{
-				return false;	
+				return false;
 			}
 
 		}catch(PDOException $e){
 			die($e->getMessage());
 		}
-	
+
 	}
 
 	public function userdata($id) {
@@ -321,11 +321,11 @@ class Users{
 		}
 
 	}
-	  	  	 
+
 	public function get_users() {
 
 		$query = $this->db->prepare("SELECT * FROM `users` ORDER BY `time` DESC");
-		
+
 		try{
 			$query->execute();
 		}catch(PDOException $e){
@@ -334,5 +334,5 @@ class Users{
 
 		return $query->fetchAll();
 
-	}	
+	}
 }
