@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     form_register: $('#help').find('#form_register').children('form[name="form_register"]'),
     doubts_login: $('#help').find('#form_register').children('#doubts-login'),
-    contact_us: $('#help').find('#form_register').children('')
+    contact_us: $('#help').find('#form_register').children('#contact-us')
 
   };//form-selectors end
 
@@ -57,7 +57,6 @@ $(document).ready(function(){
     $container.content.css({'height':'500px'});
     $container.footer.css({'position' : 'relative', 'marginTop' : '50px'});
     $form_selector.form_register.slideDown(800);
-    $form_selector.doubts_login.fadeOut(50);
     $buttons.button_back.fadeIn(100);
 
 
@@ -100,6 +99,7 @@ if(typeof $selectors.list_three !== 'undefined'){
     $selectors.list_two.fadeOut(10);
     $container.content.css({'height':'500px'});
     $container.footer.css({'position' : 'relative', 'marginTop' : '50px'});
+    $form_selector.contact_us.slideDown(800);
     $buttons.button_back.fadeIn(100);
 
 
@@ -119,6 +119,7 @@ $buttons.button_back.on('click', function(){
     $selectors.list_three.fadeIn(100);
     $form_selector.form_register.fadeOut(80);
     $form_selector.doubts_login.fadeOut(80);
+    $form_selector.contact_us.fadeOut(80);
     $buttons.button_back.fadeOut(100);
 
 

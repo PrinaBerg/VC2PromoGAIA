@@ -117,16 +117,15 @@ if(isset($_POST['submit'])){
                  <li><a href="#">Um e-mail de confirmação de cadastro será enviado no e-mail cadastrado.</li>
                </ul>
              </article>
+             <article id="contact-us">
+                <h2>Dúvidas frequentes para logar:</h2>
+                <ul>
+                  <li><a href="#">É necessário se registrar antes de realizar o seu login.</li>
+                  <li><a href="#">Clique em registre-se e faça o seu cadastro.</li>
+                  <li><a href="#">Um e-mail de confirmação de cadastro será enviado no e-mail cadastrado.</li>
+                </ul>
+              </article>
            </section>
-           <article id="contact-us">
-              <h2>Dúvidas frequentes para logar:</h2>
-              <ul>
-                <li><a href="#">É necessário se registrar antes de realizar o seu login.</li>
-                <li><a href="#">Clique em registre-se e faça o seu cadastro.</li>
-                <li><a href="#">Um e-mail de confirmação de cadastro será enviado no e-mail cadastrado.</li>
-              </ul>
-            </article>
-          </section>
         </article>
        </nav>
         <footer>
