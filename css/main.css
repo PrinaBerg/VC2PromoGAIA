@@ -1169,6 +1169,61 @@ form[name="form_register"]{
 
 }
 
+#team{
+
+  display:none;
+  position: absolute;
+  top: 48%;
+  right: 50%;
+  margin-right: -240px;
+  padding: 10px;
+  width: 480px;
+  height: 240px;
+  margin-top: 70px;
+  background: rgb(235,235,235);
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  -ms-transition:500ms ease-out;
+  transition:500ms ease-out;
+  border:2px solid black;
+  cursor:pointer;
+
+
+}
+
+#team:hover{
+
+  background: rgb(245,245,245);
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  -ms-transition:500ms ease-out;
+  transition:500ms ease-out;
+  transform: scale(1.4);
+  border:2px solid red;
+  cursor:pointer;
+
+}
+
+
+#team>ul{
+
+  padding:0;
+  margin:0;
+
+}
+
+#team>ul>li{
+
+  list-style-type:none;
+
+}
+
+#team>ul>li>a{
+
+  text-decoration:none;
+  color:black;
+
+}
 
 /* ==========================================================================
    Helper classes
