@@ -86,7 +86,7 @@
 				</a>
 		</li>
 		<li>
-			<a href="whoweare.php">
+			<a href="about.php">
 				<span class="ca-icon">b</span>
 						<div class="ca-content">
 								<h2 class="ca-main">Sobre</h2>
