@@ -59,7 +59,7 @@ $general->logged_in_protect();
               <ul>
                  <li><a href="#">Thiago Lima Project Web Manager</a></li>
                  <li><a href="#">Roberto Toshio Web Desginer</a></li>
-                 <li><a href="#">João Fernando Front-End Developer</a></li>
+                 <li><a href="#">João Fernando Front-end Developer</a></li>
               </ul>
            </article>
         </article>
