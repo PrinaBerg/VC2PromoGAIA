@@ -943,17 +943,37 @@ form[name="form_register"]{
 
 .backButton{
 
-  display:none;
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:200px;
-  margin-left:-100px;
-  margin-top:350px;
-  background:rgb(110,120,255);
-  color:white;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  margin-left: -40px;
+  margin-top: 350px;
+  background: rgb(110,120,255);
+  border:2px solid white;
+  color: white;
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  transition:500ms ease-out;
+
 
 }
+
+.backButton:hover{
+
+  background: rgb(150,150,155);
+  border:2px solid white;
+  color: white;
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  transition:500ms ease-out;
+
+
+
+}
+
+
 
 /* ==========================================================================
    Animation
@@ -961,28 +981,28 @@ form[name="form_register"]{
 
 @-webkit-keyframes errors{
 
-    0%{color: red;}
+    0%   {color: red;}
     25%  {color: orange;}
     50%  {color: yellow;}
     100% {color: red;}
 }
 @-ms-keyframes errors{
 
-    0%{color: red;}
+    0%   {color: red;}
     25%  {color: orange;}
     50%  {color: yellow;}
     100% {color: red;}
 }
 @-moz-keyframes errors{
 
-    0%{color: red;}
+    0%   {color: red;}
     25%  {color: orange;}
     50%  {color: yellow;}
     100% {color: red;}
 }
 @keyframes errors{
 
-    0%{color: red;}
+    0%   {color: red;}
     25%  {color: orange;}
     50%  {color: yellow;}
     100% {color: red;}
@@ -1002,21 +1022,21 @@ form[name="form_register"]{
 
 @-webkit-keyframes approved{
 
-    0%{color: green;}
+    0%   {color: green;}
     25%  {color: blue;}
     50%  {color: lightgreen;}
     100% {color: green;}
 }
 @-ms-keyframes approved{
 
-    0%{color: green;}
+    0%   {color: green;}
     25%  {color: blue;}
     50%  {color: lightgreen;}
     100% {color: green;}
 }
 @-moz-keyframes approved{
 
-    0%{color: green;}
+    0%   {color: green;}
     25%  {color: blue;}
     50%  {color: lightgreen;}
     100% {color: green;}
@@ -1024,7 +1044,7 @@ form[name="form_register"]{
 }
 @keyframes approved{
 
-    0%{color: green;}
+    0%   {color: green;}
     25%  {color: blue;}
     50%  {color: lightgreen;}
     100% {color: green;}
@@ -1057,7 +1077,6 @@ form[name="form_register"]{
    -moz-transition:500ms ease-out;
    -ms-transition:500ms ease-out;
    transition:500ms ease-out;
-   border-radius:100%;
    border:2px solid black;
    cursor:pointer;
 }
@@ -1070,7 +1089,6 @@ form[name="form_register"]{
   -ms-transition:500ms ease-out;
   transition:500ms ease-out;
   transform: scale(1.4);
-  border-radius:100%;
   border:2px solid red;
   cursor:pointer;
 
@@ -1112,7 +1130,6 @@ form[name="form_register"]{
   -moz-transition:500ms ease-out;
   -ms-transition:500ms ease-out;
   transition:500ms ease-out;
-  border-radius:100%;
   border:2px solid black;
   cursor:pointer;
 
@@ -1126,7 +1143,6 @@ form[name="form_register"]{
   -ms-transition:500ms ease-out;
   transition:500ms ease-out;
   transform: scale(1.4);
-  border-radius:100%;
   border:2px solid red;
   cursor:pointer;
 
@@ -1150,7 +1166,7 @@ form[name="form_register"]{
 
   text-decoration:none;
   color:black;
-  
+
 }
 
 /* ==========================================================================
