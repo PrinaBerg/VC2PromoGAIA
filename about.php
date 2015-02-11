@@ -49,10 +49,19 @@ $general->logged_in_protect();
          <br />
         <article id="help">
            <ul>
-             <li class="register"><a href="#">Equipe de Desenvolvimento de Software</a></li>
-             <li class="log"><a href="#">VC2 Promo</a></li>
-             <li class="doubt"><a href="#">Referência</a></li>
+             <li class="dev-team"><a href="#">Equipe de Desenvolvimento de Software</a></li>
+             <li class="vc2-promo"><a href="#">VC2 Promo</a></li>
+             <li class="reference"><a href="#">Referência</a></li>
            </ul>
+           <input type="button" value="voltar" class="backButton">
+           <article id="team">
+             <h2>Eles são nossos artistas da web:</h2>
+              <ul>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+              </ul>
+           </article>
         </article>
        </nav>
         <footer>
