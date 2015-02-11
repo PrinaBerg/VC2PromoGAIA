@@ -57,9 +57,9 @@ $general->logged_in_protect();
            <article id="team">
              <h2>Eles são nossos artistas da web:</h2>
               <ul>
-                 <li><a href="#"></a></li>
-                 <li><a href="#"></a></li>
-                 <li><a href="#"></a></li>
+                 <li><a href="#">Thiago Lima Project Web Manager</a></li>
+                 <li><a href="#">Roberto Toshio Web Desginer</a></li>
+                 <li><a href="#">João Fernando Front-end Developer</a></li>
               </ul>
            </article>
         </article>
