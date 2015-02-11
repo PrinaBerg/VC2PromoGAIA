@@ -108,21 +108,21 @@ if(isset($_POST['submit'])){
                  <input type="submit" name="submit">
                </fieldset>
              </form>
-             <input type="button" value="voltar" class="backButton">
+            <input type="button" value="voltar" class="backButton">
             <article id="doubts-login">
                <h2>Dúvidas frequentes para logar:</h2>
                <ul>
-                 <li><a href="#">É necessário se registrar antes de realizar o seu login.</li>
-                 <li><a href="#">Clique em registre-se e faça o seu cadastro.</li>
-                 <li><a href="#">Um e-mail de confirmação de cadastro será enviado no e-mail cadastrado.</li>
+                 <li><a href="#">É necessário se registrar antes de realizar o seu login.</a></li>
+                 <li><a href="#">Clique em registre-se e faça o seu cadastro.</a></li>
+                 <li><a href="#">Um e-mail de confirmação de cadastro será enviado no e-mail cadastrado.</a></li>
                </ul>
              </article>
              <article id="contact-us">
                 <h2>Dúvidas frequentes para logar:</h2>
                 <ul>
-                  <li><a href="#">Entre em contato conosco através do e-mail:</li>
-                  <li><a href="#"><email>desenvolvimentoweb@vc2promo.com.br</email></li>
-                  <li><a href="#">Retornaremos sobre o problema o mais breve possível.</li>
+                  <li><a href="#">Entre em contato conosco através do e-mail:</a></li>
+                  <li><a href="#"><email>desenvolvimentoweb@vc2promo.com.br</email></a></li>
+                  <li><a href="#">Retornaremos sobre o problema o mais breve possível.</a></li>
                 </ul>
               </article>
            </section>
@@ -138,7 +138,6 @@ if(isset($_POST['submit'])){
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--<script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
