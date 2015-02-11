@@ -88,7 +88,7 @@ class Users{
 
 					$query->execute();
 
-					mail($email, 'Your password', "Hello " . $username . ",\n\nYour your new password is: " . $generated_password . "\n\nPlease change your password once you have logged in using this password.\n\n-Example team");
+					mail($email, 'Sua Senha', "Olá " . $username . ",\n\nSua nova senha é: " . $generated_password . "\n\nPor favor, mude sua quando estiver logado no sistema.\n\n-VC2 Promo Developers Team.");
 
 				}else{
 					return false;
@@ -142,7 +142,7 @@ class Users{
 
 			$query->execute();
 
-			mail($email, 'Recuperação de Senha.', "Olá " . $username. ",\r\nPor favor, clique no link abaixo:\r\n\r\nhttp://www.example.com/recover.php?email=" . $email . "&generated_string=" . $generated_string . "\r\n\r\n Nós criaremos uma nova senha e enviaremos no seu e-mail.\r\n\r\n-- VC2 Promo.");
+			mail($email, 'Recuperação de Senha.', "Olá " . $username. ",\r\nPor favor, clique no link abaixo:\r\n\r\nhttp://www.example.com/recover.php?email=" . $email . "&generated_string=" . $generated_string . "\r\n\r\n Nós criaremos uma nova senha e enviaremos no seu e-mail.\r\n\r\n-- VC2 Promo Developers Team.");
 
 		} catch(PDOException $e){
 			die($e->getMessage());
@@ -215,7 +215,7 @@ class Users{
 		try{
 			$query->execute();
 
-			mail($email, 'Por Favor, ative sua conta', "Olá " . $username. ",\r\nObrigado pelo cadastro. Por favor entre no link abaixo para ativar a sua conta:\r\n\r\nhttp://www.example.com/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- VC2 Promo.");
+			mail($email, 'Por Favor, ative sua conta', "Olá " . $username. ",\r\nObrigado pelo cadastro. Por favor entre no link abaixo para ativar a sua conta:\r\n\r\nhttp://www.example.com/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- VC2 Promo Developers Team.");
 		}catch(PDOException $e){
 			die($e->getMessage());
 		}

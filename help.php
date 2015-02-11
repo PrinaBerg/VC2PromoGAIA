@@ -118,11 +118,11 @@ if(isset($_POST['submit'])){
                </ul>
              </article>
              <article id="contact-us">
-                <h2>Dúvidas frequentes para logar:</h2>
+                <h2>Persistindo a dificuldade, favor:</h2>
                 <ul>
                   <li><a href="#">Entre em contato conosco através do e-mail:</a></li>
                   <li><a href="#"><email>desenvolvimentoweb@vc2promo.com.br</email></a></li>
-                  <li><a href="#">Retornaremos sobre o problema o mais breve possível.</a></li>
+                  <li><a href="#">Retornaremos o mais breve possível.</a></li>
                 </ul>
               </article>
            </section>
