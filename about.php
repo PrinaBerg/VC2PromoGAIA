@@ -58,7 +58,7 @@ $general->logged_in_protect();
              <h2>Eles são nossos artistas da web:</h2>
               <ul>
                  <li><a href="#">Thiago Lima Project Web Manager</a></li>
-                 <li><a href="#">Roberto Toshio Web Desginer</a></li>
+                 <li><a href="#">Roberto Toshio Art Layout</a></li>
                  <li><a href="#">João Fernando Front-End Developer</a></li>
               </ul>
            </article>

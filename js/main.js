@@ -4,6 +4,8 @@ $(document).ready(function(){
 
   //container article -> '#help'
 
+//Here starts doubts JS;
+
 
   $container = [];
 
@@ -126,3 +128,48 @@ $buttons.button_back.on('click', function(){
   });
 
 });
+
+
+//Here starts about JS;
+
+  $pageStruts = [];
+
+  $pageStruts = {
+
+   content: $('main').find('nav').children('#help'),
+   footer: $('footer').find('figure').children('img')
+
+};
+
+  $pagaSelectors = [];
+
+  $pageSelectors = {
+
+  list_one: $('#help').find('ul').children('.dev-team'),
+  list_two: $('#help').find('ul').children('.vc2-promo'),
+  list_three: $('#help').find('ul').children('.reference')
+
+};
+
+  $containerSelected = [];
+
+  $containerSelected = {
+
+  team: $('nav').find('#help').children('#team'),
+
+
+
+};
+
+
+ $pageSelectors.list_one.on('click', function(){
+
+   $pageSelectors.list_three.fadeOut(10);
+   $pageSelectors.list_two.fadeOut(10);
+   $pageStruts.content.css({'height':'500px'});
+   $pageStruts.footer.css({'position' : 'relative', 'marginTop' : '50px'});
+   $containerSelected.team.slideDown(800);
+   $buttons.button_back.fadeIn(100);
+
+
+ });
