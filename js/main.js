@@ -157,9 +157,15 @@ $buttons.button_back.on('click', function(){
 
   team: $('nav').find('#help').children('#team'),
 
-
-
 };
+
+  $backButton = [];
+
+  $backButton = {
+
+    backOption: $('nav').find('#help').children('.backButton')
+
+  };
 
 
  $pageSelectors.list_one.on('click', function(){
@@ -169,7 +175,7 @@ $buttons.button_back.on('click', function(){
    $pageStruts.content.css({'height':'500px'});
    $pageStruts.footer.css({'position' : 'relative', 'marginTop' : '50px'});
    $containerSelected.team.slideDown(800);
-   $buttons.button_back.fadeIn(100);
+   $backButton.backOption.fadeIn(100);
 
 
  });
