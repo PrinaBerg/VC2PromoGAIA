@@ -134,8 +134,6 @@ $buttons.button_back.on('click', function(){
 
 }
 
-});
-
 
 //Here starts about JS;
 
@@ -211,3 +209,5 @@ $buttons.button_back.on('click', function(){
   alert('An error was found');
 
 }
+
+});
