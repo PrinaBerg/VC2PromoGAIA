@@ -179,3 +179,14 @@ $buttons.button_back.on('click', function(){
 
 
  });
+
+
+ $backButton.backOption.on('click', function(){
+
+   $pageSelectors.list_one.fadeIn(100);
+   $pageSelectors.list_two.fadeIn(100);
+   $pageSelectors.list_three.fadeIn(100);
+   $containerSelected.team.fadeOut(80);
+   $backButton.backOption.fadeOut(80);
+
+ });
