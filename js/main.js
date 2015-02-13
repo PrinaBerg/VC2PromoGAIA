@@ -114,6 +114,7 @@ if(typeof $selectors.list_three !== 'undefined'){
 };
 
 //clear button
+if(typeof $buttons.button_back !== 'undefined'){
 $buttons.button_back.on('click', function(){
 
     $selectors.list_one.fadeIn(100);
@@ -126,6 +127,12 @@ $buttons.button_back.on('click', function(){
 
 
   });
+
+}else{
+
+  alert('An error was found');
+
+}
 
 });
 
@@ -168,6 +175,8 @@ $buttons.button_back.on('click', function(){
   };
 
 
+ if(typeof $pageSelectors.list_one !== 'undefined'){
+
  $pageSelectors.list_one.on('click', function(){
 
    $pageSelectors.list_three.fadeOut(10);
@@ -177,9 +186,15 @@ $buttons.button_back.on('click', function(){
    $containerSelected.team.slideDown(800);
    $backButton.backOption.fadeIn(100);
 
-
  });
 
+}else{
+
+  alert('An error was found');
+
+}
+
+ if(typeof $)
 
  $backButton.backOption.on('click', function(){
 
