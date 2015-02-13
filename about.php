@@ -62,6 +62,14 @@ $general->logged_in_protect();
                  <li><a href="#">João Fernando Front-End Developer</a></li>
               </ul>
            </article>
+           <article id="vc2-promo">
+             <h2>Do jeito que você precisa:</h2>
+              <ul>
+                 <li><a href="#">Citação Valéria Vizusso</a></li>
+                 <li><a href="#">Citação Christian Sales</a></li>
+                 <li><a href="#">Citação VC2 Promo </a></li>
+              </ul>
+           </article>
         </article>
        </nav>
         <footer>
