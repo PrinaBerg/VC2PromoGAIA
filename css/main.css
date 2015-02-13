@@ -1224,6 +1224,12 @@ form[name="form_register"]{
 
 }
 
+#profile_picture img{
+
+  max-width:150px;
+
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1706,6 +1712,7 @@ form[name="form_register"]{
     img {
         max-width: 100% !important;
     }
+
 
     @page {
         margin: 0.5cm;
