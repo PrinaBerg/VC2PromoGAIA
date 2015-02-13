@@ -1224,6 +1224,61 @@ form[name="form_register"]{
 
 }
 
+#vc2-promo{
+
+  display:none;
+  position: absolute;
+  top: 48%;
+  right: 50%;
+  margin-right: -240px;
+  padding: 10px;
+  width: 480px;
+  height: 240px;
+  margin-top: 70px;
+  background: rgb(235,235,235);
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  -ms-transition:500ms ease-out;
+  transition:500ms ease-out;
+  border:2px solid black;
+  cursor:pointer;
+
+
+}
+
+#vc2-promo:hover{
+
+  background: rgb(245,245,245);
+  -webkit-transition:500ms ease-out;
+  -moz-transition:500ms ease-out;
+  -ms-transition:500ms ease-out;
+  transition:500ms ease-out;
+  transform: scale(1.4);
+  border:2px solid red;
+  cursor:pointer;
+
+}
+
+#vc2-promo>ul{
+
+  padding:0;
+  margin:0;
+
+}
+
+#vc2-promo>ul>li{
+
+  list-style-type:none;
+
+}
+
+#vc2-promo>ul>li>a{
+
+  text-decoration:none;
+  color:black;
+
+}
+
 #profile_picture img{
 
   max-width:150px;

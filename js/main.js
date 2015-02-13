@@ -161,6 +161,7 @@ $buttons.button_back.on('click', function(){
   $containerSelected = {
 
   team: $('nav').find('#help').children('#team'),
+  vc2: $('nav').find('#help').children('#vc2-promo')
 
 };
 
@@ -192,6 +193,27 @@ $buttons.button_back.on('click', function(){
 
 }
 
+
+ if(typeof $pageSelectors.list_two !== 'undefined'){
+
+ $pageSelectors.list_two.on('click', function(){
+
+  $pageSelectors.list_one.fadeOut(10);
+  $pageSelectors.list_two.fadeOut(10);
+  $pageStruts.content.css({'height':'500px'});
+  $pageStruts.footer.css({'position' : 'relative', 'marginTop' : '50px'});
+  $containerSelected.vc2.slideDown(800);
+  $backButton.backOption.fadeIn(100);
+
+
+  });
+
+}else{
+
+  alert('An error was found');
+
+}
+
  if(typeof $backButton.backOption !== 'undefiend'){
 
  $backButton.backOption.on('click', function(){
@@ -200,6 +222,7 @@ $buttons.button_back.on('click', function(){
    $pageSelectors.list_two.fadeIn(100);
    $pageSelectors.list_three.fadeIn(100);
    $containerSelected.team.fadeOut(80);
+   $containerSelected.vc2.fadeOut(80);
    $backButton.backOption.fadeOut(80);
 
  });
