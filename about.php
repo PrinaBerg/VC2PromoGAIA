@@ -70,6 +70,15 @@ $general->logged_in_protect();
                  <li><a href="#">Citação VC2 Promo </a></li>
               </ul>
            </article>
+           <article id="reference">
+             <h2>O que você precisa saber:</h2>
+              <ul>
+                 <li><a href="#">Marketing Promocional</a></li>
+                 <li><a href="#">Eventos</a></li>
+                 <li><a href="#">Criação</a></li>
+                 <li><a href="#">Desenvolvimento Web</a></li>
+              </ul>
+           </article>
         </article>
        </nav>
         <footer>
