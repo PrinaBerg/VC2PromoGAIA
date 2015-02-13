@@ -194,7 +194,7 @@ $buttons.button_back.on('click', function(){
 
 }
 
- if(typeof $)
+ if(typeof $backButton.backOption !== 'undefiend'){
 
  $backButton.backOption.on('click', function(){
 
@@ -205,3 +205,9 @@ $buttons.button_back.on('click', function(){
    $backButton.backOption.fadeOut(80);
 
  });
+
+}else{
+
+  alert('An error was found');
+
+}
