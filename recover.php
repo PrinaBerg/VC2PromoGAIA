@@ -46,8 +46,6 @@ $general->logged_in_protect();
           <h3>Recuperação de Senha</h3>
         </hgroup>
       </header>
-      <?php include 'includes/menu.php'; ?>
-      </nav>
       <?php
         if (isset($_GET['success']) === true && empty ($_GET['success']) === true) {
             ?>
@@ -65,7 +63,7 @@ $general->logged_in_protect();
 
             if (empty($errors) === false) {
 
-            echo '<p>' . implode('</p><p>', $errors) . '</p>';
+            echo '<h2 id="errors">' . implode('</h2><h2>', $errors) . '</h2>';
 
             } else {
 
@@ -78,6 +76,8 @@ $general->logged_in_protect();
             exit();
         }
         ?>
+      <?php include 'includes/menu.php'; ?>
+      </nav>
   <footer>
   <figure>
      <img src="img/footer-bg.png" alt="footer">

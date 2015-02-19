@@ -1016,6 +1016,7 @@ form[name="form_register"]{
   animation:errors 1s ease-out 2s infinite alternate;
   text-shadow: 1px 1px black;
   color:red;
+  text-align:center;
 
 }
 
