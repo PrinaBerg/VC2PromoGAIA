@@ -161,7 +161,8 @@ $buttons.button_back.on('click', function(){
   $containerSelected = {
 
   team: $('nav').find('#help').children('#team'),
-  vc2: $('nav').find('#help').children('#vc2-promo')
+  vc2: $('nav').find('#help').children('#vc2-promo'),
+  reference: $('nav').find('#help').children('#reference')
 
 };
 
@@ -199,10 +200,30 @@ $buttons.button_back.on('click', function(){
  $pageSelectors.list_two.on('click', function(){
 
   $pageSelectors.list_one.fadeOut(10);
-  $pageSelectors.list_two.fadeOut(10);
+  $pageSelectors.list_three.fadeOut(10);
   $pageStruts.content.css({'height':'500px'});
   $pageStruts.footer.css({'position' : 'relative', 'marginTop' : '50px'});
   $containerSelected.vc2.slideDown(800);
+  $backButton.backOption.fadeIn(100);
+
+
+  });
+
+}else{
+
+  alert('An error was found');
+
+}
+
+if (typeof $pageSelectors.list_three !== 'undefined'){
+
+  $pageSelectors.list_three.on('click', function(){
+
+  $pageSelectors.list_one.fadeOut(10);
+  $pageSelectors.list_two.fadeOut(10);
+  $pageStruts.content.css({'height':'500px'});
+  $pageStruts.footer.css({'position':'relative', 'marginTop' : '50px'});
+  $containerSelected.reference.slideDown(800);
   $backButton.backOption.fadeIn(100);
 
 
@@ -223,6 +244,7 @@ $buttons.button_back.on('click', function(){
    $pageSelectors.list_three.fadeIn(100);
    $containerSelected.team.fadeOut(80);
    $containerSelected.vc2.fadeOut(80);
+   $containerSelected.reference.fadeOut(80);
    $backButton.backOption.fadeOut(80);
 
  });
