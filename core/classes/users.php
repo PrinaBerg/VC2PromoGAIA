@@ -142,7 +142,7 @@ class Users{
 
 			$query->execute();
 
-			mail($email, 'Recuperação de Senha.', "Olá " . $username. ",\r\nPor favor, clique no link abaixo:\r\n\r\nhttp://www.example.com/recover.php?email=" . $email . "&generated_string=" . $generated_string . "\r\n\r\n Nós criaremos uma nova senha e enviaremos no seu e-mail.\r\n\r\n-- VC2 Promo Developers Team.");
+			mail($email, 'Recuperação de Senha.', "Olá " . $username. ",\r\nPor favor, clique no link abaixo:\r\n\r\nhttp://www.vc2promo.com/relatorio/recover.php?email=" . $email . "&generated_string=" . $generated_string . "\r\n\r\n Nós criaremos uma nova senha e enviaremos no seu e-mail.\r\n\r\n-- VC2 Promo Developers Team.");
 
 		} catch(PDOException $e){
 			die($e->getMessage());
