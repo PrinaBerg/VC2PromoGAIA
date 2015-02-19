@@ -2,7 +2,6 @@
 
 require 'core/init.php';
 $general->logged_out_protect();
-
 $username 	= htmlentities($user['username']);
 
 ?>
