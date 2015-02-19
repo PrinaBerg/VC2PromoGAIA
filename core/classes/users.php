@@ -215,7 +215,7 @@ class Users{
 		try{
 			$query->execute();
 
-			mail($email, 'Por Favor, ative sua conta', "Olá " . $username. ",\r\nObrigado pelo cadastro. Por favor entre no link abaixo para ativar a sua conta:\r\n\r\nhttp://www.example.com/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- VC2 Promo Developers Team.");
+			mail($email, 'Por Favor, ative sua conta', "Olá " . $username. ",\r\nObrigado pelo cadastro. Por favor entre no link abaixo para ativar a sua conta:\r\n\r\nhttp://www.vc2promo.com/relatorio/activate.php?email=" . $email . "&email_code=" . $email_code . "\r\n\r\n-- VC2 Promo Developers Team.");
 		}catch(PDOException $e){
 			die($e->getMessage());
 		}
