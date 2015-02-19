@@ -48,8 +48,9 @@ $general->logged_in_protect();
       </header>
       <?php
         if (isset($_GET['success']) === true && empty ($_GET['success']) === true) {
-            ?>
-            <h3>Obrigado, mandamos no seu e-mail uma senha temporária de acesso.</h3>
+
+           echo  '<h2 id="approved">Obrigado, mandamos no seu e-mail uma senha temporária de acesso.</h2>';
+       ?>
             <?php
 
         } else if (isset ($_GET['email'], $_GET['generated_string']) === true) {

@@ -1058,6 +1058,7 @@ form[name="form_register"]{
   -moz-animation:approved 1s ease-out 2s infinite alternate;
   animation:approved 1s ease-out 2s infinite alternate;
   text-shadow: 1px 1px black;
+  text-align:center;
   color:green;
 
 }
