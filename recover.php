@@ -49,7 +49,7 @@ $general->logged_in_protect();
       <?php
         if (isset($_GET['success']) === true && empty ($_GET['success']) === true) {
             ?>
-            <h3>Thank you, we've send you a randomly generated password in your email.</h3>
+            <h3>Obrigado, mandamos no seu e-mail uma senha temporária de acesso.</h3>
             <?php
 
         } else if (isset ($_GET['email'], $_GET['generated_string']) === true) {
@@ -58,7 +58,7 @@ $general->logged_in_protect();
             $string	    =trim($_GET['generated_string']);
 
             if ($users->email_exists($email) === false || $users->recover($email, $string) === false) {
-                $errors[] = 'Sorry, something went wrong and we couldn\'t recover your password.';
+                $errors[] = 'Desculpe, algo ocorreu de errado e não pudemos recuperar sua senha.';
             }
 
             if (empty($errors) === false) {
