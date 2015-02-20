@@ -9,7 +9,7 @@ require 'classes/bcrypt.php';
 // error_reporting(0);
 
 $users 		= new Users($db);
-$doubts         = new Doubts($db);
+$doubts   = new Doubts($db);
 $general 	= new General();
 $bcrypt 	= new Bcrypt(12);
 
