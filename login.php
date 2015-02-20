@@ -86,7 +86,7 @@ if (empty($_POST) === false) {
 			          <a href="confirm-recover.php">Esqueci a minha senha!</a>
 			          <?php
 				          if(empty($errors) === false){
-				          echo '<h4>' . implode('</h4><h4>', $errors) . '</h4>';
+				          echo '<h4 id="errors">' . implode('</h4><h4>', $errors) . '</h4>';
 			           }
 			          ?>
 		     </fieldset>
