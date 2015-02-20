@@ -87,7 +87,7 @@ $general->logged_out_protect();
                         <label>Confirmar:</label>
                         <input type="password" name="password_again"><br/><br/>
 
-                        <input type="submit" value="Change password">
+                        <input type="submit" value="Mudar Senha">
 
                       <?php  if (isset($_GET['success']) === true && empty ($_GET['success']) === true ) {
                         echo '<h4 id="approved">Senha alterada com sucesso!</h4>';
