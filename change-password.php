@@ -73,9 +73,7 @@ $general->logged_out_protect();
             }
         }
 
-        if (isset($_GET['success']) === true && empty ($_GET['success']) === true ) {
-    		echo '<p>Senha alterada com sucesso!</p>';
-        } else {?>
+      ?>
 
             <form action="" method="post">
               <fieldset>
@@ -90,13 +88,17 @@ $general->logged_out_protect();
                         <input type="password" name="password_again"><br/><br/>
 
                         <input type="submit" value="Change password">
-                        <?php
+
+                      <?php  if (isset($_GET['success']) === true && empty ($_GET['success']) === true ) {
+                        echo '<h4 id="approved">Senha alterada com sucesso!</h4>';
+                        } else {
+
                         if (empty($_POST) === false && empty($errors) === true) {
                             $users->change_password($user['id'], $_POST['password']);
                             header('Location: change-password.php?success');
                         } else if (empty ($errors) === false) {
 
-                            echo '<h4>' . implode('</h4><h4>', $errors) . '</h4>';
+                            echo '<h4 id="errors">' . implode('</h4><h4>', $errors) . '</h4>';
 
                         }
                         ?>
