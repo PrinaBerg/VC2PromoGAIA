@@ -81,13 +81,13 @@ if (isset($_POST['submit'])) {
 	<nav>
 	<header id="welcome-wrap">
 		<hgroup class="welcome">
-		<?php
-			if (isset($_GET['success']) && empty($_GET['success'])) {
-				echo 'Obrigado pelo cadastro. Verifique seu email.';
-			}
-		?>
 			<h1>VC2 Promo Report Manager</h1>
 			<h3>Registrar</h3>
+			<?php
+				if (isset($_GET['success']) && empty($_GET['success'])) {
+					echo '<h2 id="approved">Obrigado pelo cadastro. Verifique seu email.</h2>';
+				}
+			?>
 		</hgroup>
 	</header>
 	<br />
