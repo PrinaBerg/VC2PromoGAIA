@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
 			<h3>Registrar</h3>
 			<?php
 				if (isset($_GET['success']) && empty($_GET['success'])) {
-					echo '<h2 id="approved">Obrigado pelo cadastro. Verifique seu email.</h2>';
+					echo '<h4 id="approved">Obrigado pelo cadastro. Verifique seu email.</h4>';
 				}
 			?>
 		</hgroup>
@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
 			    <input type="submit" name="submit" />
 			     <?php
 		      	if(empty($errors) === false){
-				    echo '<h4>' . implode('</h4><h4>', $errors) . '</h4>';
+				    echo '<h4 id="errors">' . implode('</h4><h4>', $errors) . '</h4>';
 					  }
 					 ?>
 		  </fieldset>

@@ -57,7 +57,7 @@ $general->logged_out_protect();
      <legend><h4>Edite as suas informações <b>Importante: Suas alterações estarão visíveis instantâneamente.</b></h4></legend>
 		   <?php
 		   	if (isset($_GET['success']) && empty($_GET['success'])) {
-					echo '<h4>Suas atualizações foram realizadas!</h4>';
+					echo '<h4 id="approved">Suas atualizações foram realizadas!</h4>';
 			   } else{
 
 						if(empty($_POST) === false) {
@@ -124,7 +124,7 @@ $general->logged_out_protect();
 					exit();
 
 				} else if (empty($errors) === false) {
-					echo '<h4>' . implode('</h4><h4>', $errors) . '</h4>';
+					echo '<h4 id="errors">' . implode('</h4><h4>', $errors) . '</h4>';
 				}
 						}
 				?><br /><br />
