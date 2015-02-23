@@ -1677,10 +1677,12 @@ form[name="form_register"]{
             -ms-animation: moveFromBottom 500ms ease;
         }
 
+        .welcome {
+            text-align: center;
+            color: transparent;
+         }
+
 }
-
-
-
 
 @media only screen and (max-width: 800px) {
     /* Style adjustments for viewports that meet the condition */
