@@ -1729,10 +1729,10 @@ form[name="form_register"]{
 
 }
 
-/**
+
 @media only screen and (max-width: 580px) {
     /* Style adjustments for viewports that meet the condition */
-/**
+
     .ca-menu-rel{
 
           padding: 0;
@@ -1746,7 +1746,7 @@ form[name="form_register"]{
           margin-top: 50px;
 
           /*Transition animation*/
-  /*        transition:500ms ease-in;
+         transition:500ms ease-in;
           -webkit-transition: 500ms ease-in;
           -moz-transitiion: 500ms ease-in;
           -ms-transition: 500ms ease-in;
@@ -1754,9 +1754,17 @@ form[name="form_register"]{
 
       }
 
+      .ca-menu{
+
+        margin-left: 48px;
+
+
+      }
+
+
 }
 
-*/
+
 
 @media screen and ( max-height: 800px ){
 
