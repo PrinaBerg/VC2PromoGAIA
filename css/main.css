@@ -1679,7 +1679,9 @@ form[name="form_register"]{
 
         .welcome {
             text-align: center;
-            color: transparent;
+            font-size: 0.6em;
+            margin-top: 200px;
+
          }
 
 }
