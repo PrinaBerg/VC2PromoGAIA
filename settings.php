@@ -1,6 +1,8 @@
 <?php
 include_once 'core/init.php';
 $general->logged_out_protect();
+$username 	= htmlentities($user['username']);
+$image = $user['image_location'];
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -43,6 +45,7 @@ $general->logged_out_protect();
 					<hgroup class="welcome">
 						<h1>VC2 Promo Report Manager</h1>
 						<h3>Seja bem-vindo!</h3>
+						<?php echo "<img src='$image'>"; ?>
 					</hgroup>
 				</header>
 				<br />

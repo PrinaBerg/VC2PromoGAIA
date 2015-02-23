@@ -2,7 +2,6 @@
 require 'core/init.php';
 $general->logged_out_protect();
 $username 	= htmlentities($user['username']); // storing the user's username after clearning for any html tags.
-
 ?>
 <!DOCTYPE html>
 	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

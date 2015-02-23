@@ -148,8 +148,51 @@ nav{
 
 }
 
+#welcome-wrap > .welcome > img{
 
-.ca-menu{
+    max-width:150px;
+    position:fixed;
+    margin: 3em 3em 0 0;
+    top: 0;
+    right: 0;
+    border: 2px solid aliceblue;
+    border-radius:50%;
+
+
+    /*      Crossbroser assets    */
+    -webkit-transition: 500ms ease-out;
+    -moz-transition:500ms ease-out;
+    -ms-transtion: 500ms ease-out;
+    -o-transtion: 500ms ease-out;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+
+
+}
+
+
+#welcome-wrap > .welcome > img:hover{
+
+   max-width:175px;
+   border: 2px solid deepskyblue;
+   cursor:pointer;
+
+    /*      Crossbroser assets    */
+   -webkit-transition: 500ms ease-out;
+   -moz-transition:500ms ease-out;
+   -ms-transtion: 500ms ease-out;
+   -o-transtion: 500ms ease-out;
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+
+}
+
+
+.ca-menu {
 
     padding:0;
     margin:20px auto;
