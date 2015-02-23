@@ -2,6 +2,7 @@
 require 'core/init.php';
 $general->logged_out_protect();
 $username 	= htmlentities($user['username']); // storing the user's username after clearning for any html tags.
+$image = $user['image_location'];
 ?>
 <!DOCTYPE html>
 	<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -44,6 +45,7 @@ $username 	= htmlentities($user['username']); // storing the user's username aft
 			<hgroup class="welcome">
 				<h1>VC2 Promo Report Manager</h1>
 				<h3>Olá <?php echo $username, '!'; ?></h3>
+				<?php echo "<img src='$image'>"; ?>
 			</hgroup>
 		</header>
 		<?php include 'includes/menu.php'; ?>
