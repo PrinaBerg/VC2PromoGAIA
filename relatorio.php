@@ -2,9 +2,8 @@
 
 require 'core/init.php';
 $general->logged_out_protect();
-
 $username 	= htmlentities($user['username']);
-
+$image = $user['image_location'];
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +48,7 @@ $username 	= htmlentities($user['username']);
           <hgroup class="welcome">
              <h1>VC2 Promo Report Manager</h1>
              <h3>Olá <?php echo $username, '!'; ?></h3>
+             <?php echo "<img src='$image'>"; ?>
            </hgroup>
          </header>
          <br />
