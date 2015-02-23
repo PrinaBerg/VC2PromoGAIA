@@ -1,9 +1,8 @@
 <?php
-
 require 'core/init.php';
 $general->logged_out_protect();
 $username 	= htmlentities($user['username']);
-
+$image = $user['image_location'];
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -42,6 +41,13 @@ $username 	= htmlentities($user['username']);
             </figure>
           </header>
         </section><!-- container -->
+        <nav>
+          <header id="welcome-wrap">
+            <hgroup class="welcome">
+               <?php echo "<img src='$image'>"; ?>
+             </hgroup>
+        </header>
+      </nav>
         <article id="content-tour">
           <h1>Bem Vindo <?php echo $username, '!'; ?></h1>
           <h2><span class="tour-simples">Tour no Sistema</span></h2>

@@ -1,8 +1,8 @@
 <?php
-
 require 'core/init.php';
 $general->logged_out_protect();
-
+$username 	= htmlentities($user['username']);
+$image = $user['image_location'];
 ?>
 
 
@@ -42,7 +42,15 @@ $general->logged_out_protect();
                 <img src="img/logo-home.png" alt="logo">
             </figure>
           </header>
-        </section><!-- container -->
+          </section><!-- container -->
+          <nav>
+            <header id="welcome-wrap">
+              <hgroup class="welcome">
+                 <?php echo "<img src='$image'>"; ?>
+               </hgroup>
+          </header>
+        </nav>
+
         <article id="content-info">
         <h1>Olá!</h1>
         <h2><span class="tour-simples">Informações</span></h2>
