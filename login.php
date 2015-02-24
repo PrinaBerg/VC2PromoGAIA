@@ -78,9 +78,9 @@ if (empty($_POST) === false) {
 		  <form method="post" action="">
 			   <fieldset>
 				   <legend>Login</legend>
-		   	     <label>Username:</label>
+		   	     <label>Usuário:</label>
 			          <input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlentities($_POST['username']); ?>" /><br />
-			          <label>Password:</label>
+			          <label>Senha:</label>
 			          <input type="password" name="password" /><br /><br />
                 <input type="submit" name="submit" />
 			          <a href="confirm-recover.php">Esqueci a minha senha!</a>
