@@ -1391,7 +1391,29 @@ form[name="form_register"]{
   width:200px;
   height:50px;
   background:deepskyblue;
+  font-size:0.9em;
 
+
+}
+
+#tooltip ul{
+
+  margin:10px 0 0 0;
+  padding:0;
+
+}
+
+
+#tooltip li{
+
+  display:inline;
+
+}
+
+#tooltip li a{
+
+  text-decoration:none;
+  color:white;
 
 }
 

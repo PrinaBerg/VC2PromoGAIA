@@ -46,7 +46,13 @@ $image = $user['image_location'];
 				<h1>VC2 Promo Report Manager</h1>
 				<h3>Olá <?php echo $username, '!'; ?></h3>
 				<?php echo "<img src='$image'>"; ?>
-				<article id="tooltip"><a href="logout.php">sair</a></article>
+				<article id="tooltip">
+					<ul>
+						<li><a href="logout.php">/Home</a></li>
+						<li><a href="logout.php">/Report</a></li>
+						<li><a href="logout.php">/LogOut</a></li>
+					</ul>
+				</article>
 			</hgroup>
 		</header>
 		<?php include 'includes/menu.php'; ?>
