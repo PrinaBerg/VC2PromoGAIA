@@ -50,8 +50,8 @@ $image = $user['image_location'];
              <?php echo "<img src='../$image'>"; ?>
              <article id="tooltip">
                <ul>
-                 <li><a href="home.php">/Home</a></li>
-                 <li><a href="relatorio.php">/Report</a></li>
+                 <li><a href="../home.php">/Home</a></li>
+                 <li><a href="../relatorio.php">/Report</a></li>
                  <li><a href="logout.php">/LogOut</a></li>
                </ul>
              </article>
