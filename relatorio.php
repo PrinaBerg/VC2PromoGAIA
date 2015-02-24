@@ -90,7 +90,7 @@ $image = $user['image_location'];
                         </a>
                     </li>
                     <li>
-                        <a href="cliente/cliente-foto.html">
+                        <a href="cliente/cliente-foto.php">
                             <span class="ca-icon">I</span>
                             <div class="ca-content">
                                 <h2 class="ca-main">Input de Fotos</h2>
