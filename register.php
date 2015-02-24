@@ -98,9 +98,9 @@ if (isset($_POST['submit'])) {
 		<form method="post" action="">
 		  <fieldset>
 				<legend>Registrar</legend>
-		  	  <label>Username:</label>
+		  	  <label>Usuário:</label>
 		  	  <input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlentities($_POST['username']); ?>" ><br />
-			    <label>Password:</label>
+			    <label>Senha:</label>
 			    <input type="password" name="password" /><br />
 			    <label>Email:</label>
 			    <input type="text" name="email" value="<?php if(isset($_POST['email'])) echo htmlentities($_POST['email']); ?>"/><br /><br />
