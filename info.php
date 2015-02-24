@@ -47,6 +47,13 @@ $image = $user['image_location'];
             <header id="welcome-wrap">
               <hgroup class="welcome">
                  <?php echo "<img src='$image'>"; ?>
+                 <article id="tooltip">
+                   <ul>
+                     <li><a href="home.php">/Home</a></li>
+                     <li><a href="relatorio.php">/Report</a></li>
+                     <li><a href="logout.php">/LogOut</a></li>
+                   </ul>
+                 </article>
                </hgroup>
           </header>
         </nav>

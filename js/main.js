@@ -7,7 +7,7 @@ $(document).ready(function(){
 //Here starts doubts JS;
 
 
-  $container = [];
+  var $container = [];
 
   $container = {
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   //selectors
 
-  $selectors = [];
+  var $selectors = [];
 
   $selectors = {
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
   //forms-selectors
 
-  $form_selector = [];
+  var $form_selector = [];
 
   $form_selector = {
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
   };//form-selectors end
 
-  $buttons = [];
+  var $buttons = [];
 
   $buttons = {
 
@@ -137,7 +137,7 @@ $buttons.button_back.on('click', function(){
 
 //Here starts about JS;
 
-  $pageStruts = [];
+  var $pageStruts = [];
 
   $pageStruts = {
 
@@ -146,7 +146,7 @@ $buttons.button_back.on('click', function(){
 
 };
 
-  $pagaSelectors = [];
+  var $pagaSelectors = [];
 
   $pageSelectors = {
 
@@ -156,7 +156,7 @@ $buttons.button_back.on('click', function(){
 
 };
 
-  $containerSelected = [];
+  var $containerSelected = [];
 
   $containerSelected = {
 
@@ -166,7 +166,7 @@ $buttons.button_back.on('click', function(){
 
 };
 
-  $backButton = [];
+  var $backButton = [];
 
   $backButton = {
 
@@ -256,3 +256,28 @@ if (typeof $pageSelectors.list_three !== 'undefined'){
 }
 
 });
+
+
+//tooltip function.
+
+var $tooltipContainer = [];
+
+    $tooltipContainer = {
+
+    imgLocation: $('#welcome-wrap').find('.welcome').children('img'),
+    tooltipObject: $('#welcome-wrap').find('.welcome').children('#tooltip')
+
+
+    };
+
+  $tooltipContainer.imgLocation.on('mouseover', function(){
+
+    $tooltipContainer.tooltipObject.fadeIn(800);
+
+  setTimeout(function(){
+
+    $tooltipContainer.tooltipObject.fadeOut(800);
+
+  }, 3000)
+
+  });
