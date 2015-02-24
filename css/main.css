@@ -151,6 +151,7 @@ nav{
 #welcome-wrap > .welcome > img{
 
     max-width:150px;
+    min-width: 170px;
     position:fixed;
     margin: 3em 3em 0 0;
     top: 0;
