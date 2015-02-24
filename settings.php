@@ -181,11 +181,10 @@ $image = $user['image_location'];
 	      </select>
 	     </li>
 	     <li>
-	       <label>Bio:</label><br>
+	       <label>Sobre:</label><br>
 	      <textarea name="bio"><?php if (isset($_POST['bio']) ){echo htmlentities(strip_tags($_POST['bio']));} else { echo $user['bio']; }?></textarea>
 	     </li>
 			 <li>
-          <label>Atualizar:</label><br><br>
           <input type="submit" value="Atualizar">
 			</li>
 			</ul>
