@@ -1380,8 +1380,18 @@ form[name="form_register"]{
 #profile_picture img{
 
   max-width:150px;
+  -webkit-filter: grayscale(100%) brightness(60%) contrast(100%);
+  -webkit-transition: 200ms ease-in;
 
 }
+
+#profile_picture img:hover{
+
+  -webkit-filter: grayscale(20%) brightness(60%) contrast(100%);
+  -webkit-transition: 200ms ease-in;
+
+}
+
 
 #tooltip{
 
