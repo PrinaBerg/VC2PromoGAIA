@@ -1383,6 +1383,18 @@ form[name="form_register"]{
 
 }
 
+#tooltip{
+
+  position:fixed;
+  right:1.7%;
+  top:228px;
+  width:200px;
+  height:50px;
+  background:deepskyblue;
+
+
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
