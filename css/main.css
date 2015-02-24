@@ -164,10 +164,7 @@ nav{
     -moz-transition:500ms ease-out;
     -ms-transtion: 500ms ease-out;
     -o-transtion: 500ms ease-out;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+
 
 
 }
@@ -175,7 +172,7 @@ nav{
 
 #welcome-wrap > .welcome > img:hover{
 
-   max-width:175px;
+   max-width:150px;
    border: 2px solid deepskyblue;
    cursor:pointer;
 
@@ -184,10 +181,6 @@ nav{
    -moz-transition:500ms ease-out;
    -ms-transtion: 500ms ease-out;
    -o-transtion: 500ms ease-out;
-   -webkit-transform: rotate(360deg);
-   -moz-transform: rotate(360deg);
-   -ms-transform: rotate(360deg);
-   -o-transform: rotate(360deg);
 
 }
 
