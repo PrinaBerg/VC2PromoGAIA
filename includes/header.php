@@ -12,7 +12,11 @@
           <meta name="author" content="VC2 Promo, VC2 Promo Marketing Promocional, Do jeito que você precisa, Valéria Vizusso, Christian Salles">
           <meta name="keywords" content="VC2 Promo, Marketing Promocional, Vendas, Trade Marketing, Eventos, Promoções, alavancar vendas, relatórios, criação, design">
           <meta name="description" content="Marketing Promocional">
-          <meta name="robots" content="index, follow">
+          <meta name="robots" content="all">
+
+          <!--[if lt IE 7]>
+              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
 
           <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
