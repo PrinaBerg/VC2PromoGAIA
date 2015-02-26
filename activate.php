@@ -9,11 +9,15 @@ $general->logged_in_protect();
 	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 			<head>
-					<meta charset="utf-8">
+			  	<meta charset="utf-8">
 					<meta http-equiv="X-UA-Compatible" content="IE=edge">
-					<title>VC2 Promo Report</title>
-					<meta name="description" content="">
 					<meta name="viewport" content="width=device-width, initial-scale=1">
+
+					<title>VC2 Promo Report</title>
+					<meta name="author" content="VC2 Promo, VC2 Promo Marketing Promocional, Do jeito que você precisa, Valéria Vizusso, Christian Salles">
+					<meta name="keywords" content="VC2 Promo, Marketing Promocional, Vendas, Trade Marketing, Eventos, Promoções, alavancar vendas, relatórios, criação, design">
+					<meta name="content" content="Marketing Promocional">
+					<meta name="robots" content="index, follow">
 
 					<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
