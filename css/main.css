@@ -1401,6 +1401,7 @@ form[name="form_register"]{
 
   display:none;
   position:fixed;
+  z-index:100;
   right:1.7%;
   top:228px;
   width:200px;
