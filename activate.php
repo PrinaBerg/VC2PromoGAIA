@@ -1,7 +1,6 @@
 <?php
 require 'core/init.php';
 $general->logged_in_protect();
-
 ?>
 
 		<?php include 'includes/header.php'; ?>
