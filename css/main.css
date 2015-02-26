@@ -160,6 +160,7 @@ nav{
     border: 2px solid aliceblue;
     border-radius:50%;
     -webkit-filter: grayscale(50%) brightness(60%) contrast(100%);
+    filter: grayscale(50%) brightness(60%) contrast(100%);
 
 
     /*      Crossbroser assets    */
@@ -179,6 +180,7 @@ nav{
    border: 2px solid deepskyblue;
    cursor:pointer;
    -webkit-filter: grayscale(20%) brightness(80%) contrast(100%);
+   filter: grayscale(50%) brightness(60%) contrast(100%);
 
     /*      Crossbroser assets    */
    -webkit-transition: 500ms ease-out;
