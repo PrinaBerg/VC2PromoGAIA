@@ -1805,6 +1805,18 @@ form[name="form_register"]{
 
          }
 
+         /* settings.php screen ajusts*/
+         fieldset > legend > h4{
+
+           font-size:1em;
+
+         }
+
+         form[name="settings-form"]  h4{
+
+           font-size:1em;
+
+         }
 
 
 }
