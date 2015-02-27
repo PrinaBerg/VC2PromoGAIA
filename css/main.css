@@ -1818,9 +1818,16 @@ form[name="form_register"]{
 
          }
 
+         form[name="settings-form"] {
+
+          position: relative;
+          width: 620px;
+          height: 230px;
+          margin: 80px auto;
+
+          }
 
 }
-
 
 @media only screen and (max-width: 1024px) {
     /* Style adjustments for viewports that meet the condition */
