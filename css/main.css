@@ -1787,6 +1787,26 @@ form[name="form_register"]{
 
          }
 
+         h4{
+
+           font-size:1.8em;
+
+         }
+
+         header > hgroup > h3{
+
+           font-size:1.8em;
+
+         }
+
+         #errors{
+
+           font-size:1em;
+
+         }
+
+
+
 }
 
 
