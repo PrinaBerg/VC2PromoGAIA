@@ -34,6 +34,7 @@ $image = $user['image_location'];
 				</article>
 			</hgroup>
 		</header>
+		<br />
 		<?php include 'includes/menu.php'; ?>
 	  </nav>
 
