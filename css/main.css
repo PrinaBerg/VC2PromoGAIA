@@ -1779,8 +1779,8 @@ form[name="form_register"]{
            font-size: 1.6em !important;
            position: fixed;
            z-index: 100;
-           right: 1.2%;
-           top: 208px;
+           right: 0.8%;
+           top: 190px;
            width: 200px;
            height: 50px;
            background: deepskyblue;
@@ -1826,6 +1826,48 @@ form[name="form_register"]{
           margin: 80px auto;
 
           }
+
+          #welcome-wrap > .welcome > img{
+
+          max-width:150px;
+          min-width: 120px;
+          min-height:150px;
+          position:fixed;
+          z-index:100;
+          margin: 3em 3em 0 0;
+          top: 0;
+          right: 0;
+          border: 2px solid aliceblue;
+          border-radius:50%;
+          -webkit-filter: grayscale(50%) brightness(60%) contrast(100%);
+          filter: grayscale(50%) brightness(60%) contrast(100%);
+
+
+          /*      Crossbroser assets    */
+          -webkit-transition: 500ms ease-out;
+          -moz-transition:500ms ease-out;
+          -ms-transtion: 500ms ease-out;
+          -o-transtion: 500ms ease-out;
+
+          }
+
+
+          #welcome-wrap > .welcome > img:hover{
+
+          max-width:150px;
+          border: 2px solid deepskyblue;
+          cursor:pointer;
+          -webkit-filter: grayscale(20%) brightness(80%) contrast(100%);
+          filter: grayscale(50%) brightness(60%) contrast(100%);
+
+         /*      Crossbroser assets    */
+         -webkit-transition: 500ms ease-out;
+         -moz-transition:500ms ease-out;
+         -ms-transtion: 500ms ease-out;
+         -o-transtion: 500ms ease-out;
+
+         }
+
 
 }
 
