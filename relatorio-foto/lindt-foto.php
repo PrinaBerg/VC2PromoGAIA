@@ -52,7 +52,7 @@ $image = $user['image_location'];
         <header id="welcome-wrap">
           <hgroup class="welcome">
              <h1>VC2 Promo Report Manager</h1>
-             <h3>Cadastrar informaação ou visualizar <?php echo $username, '?'; ?></h3>
+             <h3>Cadastrar foto ou visualizar <?php echo $username, '?'; ?></h3>
              <?php echo "<img src='../$image'>"; ?>
              <article id="tooltip">
                <ul>

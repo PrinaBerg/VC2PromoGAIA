@@ -62,7 +62,7 @@ $image = $user['image_location'];
                         <a href="../relatorio-foto/lindt-foto.php">
                             <span class="ca-icon">I</span>
                             <div class="ca-content">
-                                <h2 class="ca-main">Lindt</h2>
+                                <h2 class="ca-main">Lindt Páscoa</h2>
                                 <h3 class="ca-sub">Inserir Fotos</h3>
                             </div>
                         </a>

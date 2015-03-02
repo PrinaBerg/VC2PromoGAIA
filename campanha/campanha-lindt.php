@@ -6,6 +6,8 @@ $general->logged_out_protect();
 $username 	= htmlentities($user['username']);
 
 ?>
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -33,7 +35,7 @@ $username 	= htmlentities($user['username']);
         <!-- Add your site or application content here -->
         <main>
          <section id="container">
-           <article id="return-panel"><a href="../campanha/campanha-vanish.php"><h3>Voltar</h3></a></article>
+           <article id="return-panel"><a href="../cliente/cliente-relatorio.php"><h3>Voltar</h3></a></article>
            <figure>
              <img src="../img/bg.png" alt="logo">
            </figure>
@@ -51,26 +53,53 @@ $username 	= htmlentities($user['username']);
            </hgroup>
          </header>
          <br />
-          <ul class="ca-menu-rel">
+          <ul class="ca-menu">
                     <li>
-                        <a href="https://secure.jotformz.com/form/42544690217657" target="_blank">
-                            <span class="ca-icon-rel">a</span>
-                            <div class="ca-content-rel">
-                                <h2 class="ca-main-rel">Vanish</h2>
-                                <h3 class="ca-sub-rel">Digitar Relatório</h3>
+                        <a href="../relatorio/lindt.php">
+                            <span class="ca-icon">a</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Lindt Páscoa</h2>
+                                <h3 class="ca-sub">Selecionar Campanha</h3>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="vanish-digitados.php">
-                            <span class="ca-icon-rel">a</span>
-                            <div class="ca-content-rel">
-                                <h2 class="ca-main-rel">Vanish</h2>
-                                <h3 class="ca-sub-rel">Visualizar Informação</h3>
+                        <a href="#">
+                            <span class="ca-icon">a</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Campanha 2</h2>
+                                <h3 class="ca-sub">Selecionar Campanha</h3>
                             </div>
                         </a>
                     </li>
-          </ul>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">a</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Campanha 3</h2>
+                                <h3 class="ca-sub">Selecionar Campanha</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">a</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Campanha 4</h2>
+                                <h3 class="ca-sub">Selecionar Campanha</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">a</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Campanha 5</h2>
+                                <h3 class="ca-sub">Selecionar Campanha</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
         </nav><!-- EndMenu -->
         <footer>
           <figure>

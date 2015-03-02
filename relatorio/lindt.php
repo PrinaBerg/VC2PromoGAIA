@@ -2,12 +2,9 @@
 
 require '../core/init.php';
 $general->logged_out_protect();
-
 $username 	= htmlentities($user['username']);
 
 ?>
-
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -35,7 +32,7 @@ $username 	= htmlentities($user['username']);
         <!-- Add your site or application content here -->
         <main>
          <section id="container">
-           <article id="return-panel"><a href="../cliente/cliente-relatorio.php"><h3>Voltar</h3></a></article>
+           <article id="return-panel"><a href="../campanha/campanha-lindt.php"><h3>Voltar</h3></a></article>
            <figure>
              <img src="../img/bg.png" alt="logo">
            </figure>
@@ -49,57 +46,30 @@ $username 	= htmlentities($user['username']);
         <header id="welcome-wrap">
           <hgroup class="welcome">
              <h1>VC2 Promo Report Manager</h1>
-             <h3>Selecione uma campanha <?php echo $username, '!'; ?></h3>
+             <h3>Cadastrar informação ou visualizar <?php echo $username, '?'; ?></h3>
            </hgroup>
          </header>
          <br />
-          <ul class="ca-menu">
+          <ul class="ca-menu-rel">
                     <li>
-                        <a href="../relatorio/vanish.php">
-                            <span class="ca-icon">a</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Vanish</h2>
-                                <h3 class="ca-sub">Selecionar Campanha</h3>
+                        <a href="#" target="_blank">
+                            <span class="ca-icon-rel">a</span>
+                            <div class="ca-content-rel">
+                                <h2 class="ca-main-rel">Lindt Páscoa</h2>
+                                <h3 class="ca-sub-rel">Digitar Relatório</h3>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="ca-icon">a</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 2</h2>
-                                <h3 class="ca-sub">Selecionar Campanha</h3>
+                        <a href="#" target="_blank">
+                            <span class="ca-icon-rel">a</span>
+                            <div class="ca-content-rel">
+                                <h2 class="ca-main-rel">Lindt Páscoa</h2>
+                                <h3 class="ca-sub-rel">Visualizar Informação</h3>
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="ca-icon">a</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 3</h2>
-                                <h3 class="ca-sub">Selecionar Campanha</h3>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ca-icon">a</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 4</h2>
-                                <h3 class="ca-sub">Selecionar Campanha</h3>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ca-icon">a</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 5</h2>
-                                <h3 class="ca-sub">Selecionar Campanha</h3>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+          </ul>
         </nav><!-- EndMenu -->
         <footer>
           <figure>
