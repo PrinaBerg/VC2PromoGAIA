@@ -9,20 +9,27 @@ $image = $user['image_location'];
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>VC2 Promo Report</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link href="http://fonts.googleapis.com/css?family=Terminal+Dosis" rel="stylesheet" type="text/css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
+    <title>VC2 Promo Report</title>
+    <meta name="author" content="VC2 Promo, VC2 Promo Marketing Promocional, Do jeito que você precisa, Valéria Vizusso, Christian Salles">
+    <meta name="keywords" content="VC2 Promo, Marketing Promocional, Vendas, Trade Marketing, Eventos, Promoções, alavancar vendas, relatórios, criação, design">
+    <meta name="content" content="Marketing Promocional">
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link href="http://fonts.googleapis.com/css?family=Terminal+Dosis" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+ </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -31,7 +38,7 @@ $image = $user['image_location'];
         <!-- Add your site or application content here -->
         <main>
          <section id="container">
-           <article id="return-panel"><a href="../cliente/cliente-foto.php"><h3>Voltar</h3></a></article>
+           <article id="return-panel"><a href="../campanha/campanha-foto-vanish.php"><h3>Voltar</h3></a></article>
            <figure>
              <img src="../img/bg.png" alt="logo">
            </figure>
@@ -45,7 +52,7 @@ $image = $user['image_location'];
         <header id="welcome-wrap">
           <hgroup class="welcome">
              <h1>VC2 Promo Report Manager</h1>
-             <h3>Selecione uma campanha <?php echo $username, '!'; ?></h3>
+             <h3>Cadastrar informaação ou visualizar <?php echo $username, '?'; ?></h3>
              <?php echo "<img src='../$image'>"; ?>
              <article id="tooltip">
                <ul>
@@ -57,53 +64,26 @@ $image = $user['image_location'];
            </hgroup>
          </header>
          <br />
-          <ul class="ca-menu">
+          <ul class="ca-menu-rel">
                     <li>
-                        <a href="../relatorio-foto/vanish-foto.php">
-                            <span class="ca-icon">I</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Vanish</h2>
-                                <h3 class="ca-sub">Inserir Fotos</h3>
+                        <a href="https://secure.jotformpro.com/form/42574027965967" target="_blank">
+                            <span class="ca-icon-rel">I</span>
+                            <div class="ca-content-rel">
+                                <h2 class="ca-main-rel">Vanish</h2>
+                                <h3 class="ca-sub-rel">Cadastrar Fotos</h3>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="ca-icon">I</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 2</h2>
-                                <h3 class="ca-sub">Inserir Fotos</h3>
+                        <a href="http://www.jotform.com/grid/42613455082047" target="_blank">
+                            <span class="ca-icon-rel">I</span>
+                            <div class="ca-content-rel">
+                                <h2 class="ca-main-rel">Vanish</h2>
+                                <h3 class="ca-sub-rel">Visualizar Foto</h3>
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="ca-icon">I</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 3</h2>
-                                <h3 class="ca-sub">Inserir Fotos</h3>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ca-icon">I</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 4</h2>
-                                <h3 class="ca-sub">Inserir Fotos</h3>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ca-icon">I</span>
-                            <div class="ca-content">
-                                <h2 class="ca-main">Campanha 4</h2>
-                                <h3 class="ca-sub">Digitar Relatório</h3>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+          </ul>
         </nav><!-- EndMenu -->
         <footer>
           <figure>
