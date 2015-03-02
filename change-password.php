@@ -3,6 +3,7 @@ include_once 'core/init.php';
 $general->logged_out_protect();
 ?>
 
+
   <?php include 'includes/header.php'; ?>
 
       <!-- Add your site or application content here -->
