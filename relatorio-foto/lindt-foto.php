@@ -38,7 +38,7 @@ $image = $user['image_location'];
         <!-- Add your site or application content here -->
         <main>
          <section id="container">
-           <article id="return-panel"><a href="../campanha/campanha-foto-vanish.php"><h3>Voltar</h3></a></article>
+           <article id="return-panel"><a href="../campanha/campanha-foto-lindt.php"><h3>Voltar</h3></a></article>
            <figure>
              <img src="../img/bg.png" alt="logo">
            </figure>
@@ -66,19 +66,19 @@ $image = $user['image_location'];
          <br />
           <ul class="ca-menu-rel">
                     <li>
-                        <a href="https://secure.jotformpro.com/form/42574027965967" target="_blank">
+                        <a href="#" target="_blank">
                             <span class="ca-icon-rel">I</span>
                             <div class="ca-content-rel">
-                                <h2 class="ca-main-rel">Vanish</h2>
+                                <h2 class="ca-main-rel">Lindt</h2>
                                 <h3 class="ca-sub-rel">Cadastrar Fotos</h3>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.jotform.com/grid/42613455082047" target="_blank">
+                        <a href="#" target="_blank">
                             <span class="ca-icon-rel">I</span>
                             <div class="ca-content-rel">
-                                <h2 class="ca-main-rel">Vanish</h2>
+                                <h2 class="ca-main-rel">Lindt</h2>
                                 <h3 class="ca-sub-rel">Visualizar Foto</h3>
                             </div>
                         </a>
