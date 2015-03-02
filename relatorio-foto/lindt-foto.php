@@ -69,7 +69,7 @@ $image = $user['image_location'];
                         <a href="#" target="_blank">
                             <span class="ca-icon-rel">I</span>
                             <div class="ca-content-rel">
-                                <h2 class="ca-main-rel">Lindt</h2>
+                                <h2 class="ca-main-rel">Lindt Páscoa</h2>
                                 <h3 class="ca-sub-rel">Cadastrar Fotos</h3>
                             </div>
                         </a>
@@ -78,7 +78,7 @@ $image = $user['image_location'];
                         <a href="#" target="_blank">
                             <span class="ca-icon-rel">I</span>
                             <div class="ca-content-rel">
-                                <h2 class="ca-main-rel">Lindt</h2>
+                                <h2 class="ca-main-rel">Lindt Páscoa</h2>
                                 <h3 class="ca-sub-rel">Visualizar Foto</h3>
                             </div>
                         </a>
