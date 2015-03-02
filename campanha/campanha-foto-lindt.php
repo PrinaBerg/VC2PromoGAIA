@@ -59,10 +59,10 @@ $image = $user['image_location'];
          <br />
           <ul class="ca-menu">
                     <li>
-                        <a href="../relatorio-foto/vanish-foto.php">
+                        <a href="../relatorio-foto/lindt-foto.php">
                             <span class="ca-icon">I</span>
                             <div class="ca-content">
-                                <h2 class="ca-main">Vanish</h2>
+                                <h2 class="ca-main">Lindt</h2>
                                 <h3 class="ca-sub">Inserir Fotos</h3>
                             </div>
                         </a>
