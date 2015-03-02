@@ -65,7 +65,7 @@ $image = $user['image_location'];
          <br />
         <section id="dg-container" class="dg-container">
         <div class="dg-wrapper">
-          <a href="../campanha/campanha-foto-vanish.php"><h1>Reckitt Benckiser</h1></a>
+          <a href="../campanha/campanha-foto-lindt.php"><h1>Lindt</h1></a>
           <a href="../campanha/campanha-foto-dreher.html"><h1>Campari</h1></a>
           <a href="#"><h1>Cliente</h1></a>
         </div>
