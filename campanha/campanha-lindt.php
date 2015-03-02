@@ -2,9 +2,8 @@
 
 require '../core/init.php';
 $general->logged_out_protect();
-
-$username 	= htmlentities($user['username']);
-
+$username = htmlentities($user['username']);
+$image = $user['image_location'];
 ?>
 
 
@@ -50,6 +49,14 @@ $username 	= htmlentities($user['username']);
           <hgroup class="welcome">
              <h1>VC2 Promo Report Manager</h1>
              <h3>Selecione uma campanha <?php echo $username, '!'; ?></h3>
+             <?php echo "<img src='../$image'>"; ?>
+             <article id="tooltip">
+               <ul>
+                 <li><a href="../home.php">/Home</a></li>
+                 <li><a href="../relatorio.php">/Report</a></li>
+                 <li><a href="../logout.php">/LogOut</a></li>
+               </ul>
+             </article>
            </hgroup>
          </header>
          <br />
