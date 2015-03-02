@@ -136,11 +136,11 @@
 		-o-transform-style: preserve-3d;
 		-ms-transform-style: preserve-3d;
 		transform-style: preserve-3d;
-		-webkit-perspective: 320px;
-		-moz-perspective: 320px;
-		-o-perspective: 320px;
-		-ms-perspective: 320px;
-		perspective: 320px;
+		-webkit-perspective: 460px;
+		-moz-perspective: 460px;
+		-o-perspective: 460px;
+		-ms-perspective: 460px;
+		perspective: 460px;
 	}
 	.dg-wrapper a{
 		width: 280px;
